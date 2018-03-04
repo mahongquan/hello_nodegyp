@@ -2,7 +2,7 @@
   "targets": [
     {
       "target_name": "hello",
-      "sources": [ "atexit.cc" ],
+      "sources": [ "add.cc" ],
       "include_dirs": [
         "<!(node -e \"require('nan')\")"
       ]

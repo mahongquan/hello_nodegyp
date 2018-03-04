@@ -34,9 +34,9 @@ function testWrapObj(){
 function testatexit(){
 	var addon = require('bindings')('hello');
 }
-//testadd();
+testadd();
 //testcallback();
 //testobj();
 //testfunction();
 //testWrapObj();
-testatexit();
+//testatexit();
