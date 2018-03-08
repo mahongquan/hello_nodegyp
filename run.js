@@ -30,13 +30,15 @@ function testWrapObj(){
 	console.log(obj.plusOne());
 	// Prints: 12
 	console.log(obj.plusOne());
+	console.log(obj.link());
+	console.log(obj.getchanelVolt(0));
 }
 function testatexit(){
 	var addon = require('bindings')('hello');
 }
-testadd();
+//testadd();
 //testcallback();
 //testobj();
 //testfunction();
-//testWrapObj();
+testWrapObj();
 //testatexit();

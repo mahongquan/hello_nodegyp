@@ -2,7 +2,7 @@
   "targets": [
     {
 	    "target_name": "hello",
-	    "sources": [ "add.cc" ], 
+	    "sources": [ "wrapobject.cc","myobject.cc" ], 
 	    "include_dirs": [
       		"<!(node -e \"require('nan')\")",
                 "C:/ADLINK/PCIS-DASK/include"
