@@ -16,6 +16,7 @@ static int at_exit_cb1_called = 0;
 static int at_exit_cb2_called = 0;
 
 static void at_exit_cb1(void* arg) {
+  printf("cb1\n");
   Isolate* isolate = static_cast<Isolate*>(arg);
   HandleScope scope(isolate);
   Local<Object> obj = Object::New(isolate);
