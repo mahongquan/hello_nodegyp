@@ -1,0 +1,1 @@
+C:\Users\group2\AppData\Local\Yarn\bin\node-gyp rebuild  --msvs_version=2015 --target=1.8.2 --arch=ia32 --target_platform=win32 --dist-url=https://atom.io/download/electron/ 

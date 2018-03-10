@@ -1,0 +1,1 @@
+C:\Users\group2\AppData\Local\Yarn\bin\node-gyp rebuild  --msvs_version=2015

@@ -1,0 +1,1 @@
+C:\Users\group2\AppData\Local\Yarn\bin\node-gyp configure --msvs_version=2015
