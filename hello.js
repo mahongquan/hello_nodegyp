@@ -1,3 +1,3 @@
 'use strict'
-var addon = require('bindings')('hello');
+var addon = require('./build/Release/hello.node');
 exports.hello = function() { return addon.hello() }

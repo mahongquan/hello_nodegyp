@@ -56,28 +56,46 @@ function testatexit(){
 //testcallback();
 //testobj();
 //testfunction();
-testWrapObj();
+//testWrapObj();
 //testatexit();
-// Public Enum vlvindex
-//     enmZongyang = 0
-//     enmGaoPin = 1
-//     enmPanglu = 2
-//     enmLushi = 3
-//     enmYangqiang = 4
-//     enmLuhou = 5
-//     enmpaikong = 6
-//     enmShengJiang = 7
-//     enmShuaLU = 8
-//     enmGpPower = 9
-//     enmXichen = 10
-//     enmHuancui = 11
-//     enmLLTJ = 12
-// End Enum
-// Public Enum diIndex
-//     enmZongyang = 0
-//     enmDongli = 2
-//     enmLushua = 6
-//     enmLuhou = 4
-//     enmShenglu = 8
-    
-// End Enum
+const diIndex={
+    enmZongyang :0,
+    enmDongli : 2,
+    enmLushua : 6,
+    enmLuhou : 4,
+    enmShenglu : 8
+}
+const vlvindex={
+    enmShuaLU : 0,
+    enmXichen :1,
+    enmShengJiang :2,
+    enmGpPower : 3,
+    enmGaoPin : 4,
+    enmLLTJ:5,
+    enmZongyang : 7,
+    enmLushi : 8,
+	enmYangqiang : 9,
+    enmHuancui : 10,
+    enmPanglu : 11,
+    enmLuhou : 12,
+    enmpaikong : 13
+}
+class Card{
+	constructor(){
+		var addon = require('bindings')('hello');
+		this.adlink = new addon.MyObject(10);
+		this.adlink.link();
+	}
+	openVLV(index){
+		this.adlink.openVLV(index);
+	}	
+	openShengJiang(){
+		this.adlink.openVLV(vlvindex.enmShengJiang);
+	}
+	closeShengJiang(){
+		this.adlink.closeVLV(vlvindex.enmShengJiang);
+	}	
+}
+var c=new Card();
+//c.openShengJiang();
+c.openVLV(vlvindex.enmShuaLU);
